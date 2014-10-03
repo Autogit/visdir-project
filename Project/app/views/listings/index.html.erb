@@ -1,0 +1,7 @@
+<h1>Listings</h1>
+
+<% @listings.each do |l| %>
+  <p><%= image_tag l.image_url.to_s %></p>
+  <p><%= l.title %></p>
+  <p><%= l.content %></p>
+<% end %>
